@@ -1,0 +1,121 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+    --scroll-track-border: #EAECF0;
+    --scroll-thumb: #d1d5db;
+    --scroll-thumb-hover: #9ca3af;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+    height: 8px;
+    /* Altura do scroll horizontal */
+    width: 8px;
+    /* Largura do scroll vertical */
+}
+
+@layer utilities {
+    .custom-scrollbar::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar-track {
+        @apply bg-transparent;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+        @apply bg-gray-300 dark:bg-gray-800 rounded-full transition-colors;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+        @apply bg-gray-400 dark:bg-gray-700;
+    }
+}
+
+.custom-scrollbar::-webkit-scrollbar-button {
+    display: none !important;
+    width: 0;
+    height: 0;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: var(--scroll-thumb);
+    border-radius: 100px;
+    transition: background 0.3s ease;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background-color: var(--scroll-thumb-hover);
+}
+
+.dark .custom-scrollbar::-webkit-scrollbar-track {
+    border-color: #374151;
+    /* Dark mode track border */
+}
+
+
+/* --- Checkbox Styling --- */
+
+/* 1. Base do Checkbox */
+input[type="checkbox"] {
+    appearance: none;
+    /* Remove o estilo padrão do navegador */
+    -webkit-appearance: none;
+    background-color: #fff;
+    margin: 0;
+    width: 18px;
+    /* Tamanho exato */
+    height: 18px;
+    border: 1px solid #D0D5DD;
+    /* Borda cinza suave (Gray-300) */
+    border-radius: 4px;
+    /* Border radius leve */
+    display: grid;
+    place-content: center;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+
+/* 2. O Ícone de "Check" (O Segredo) */
+input[type="checkbox"]::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    transform: scale(0);
+    /* Escondido por padrão */
+    transition: 120ms transform ease-in-out;
+    background-color: white;
+    /* Desenha o check usando coordenadas matemáticas */
+    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+
+/* 3. Estado: Marcado (Checked) */
+input[type="checkbox"]:checked {
+    background-color: #00A859;
+    /* Cor Brand (Verde) */
+    border-color: #00A859;
+}
+
+input[type="checkbox"]:checked::before {
+    transform: scale(1);
+    /* Faz o check "crescer" suavemente */
+}
+
+/* 4. Estado: Hover (Foco visual) */
+input[type="checkbox"]:hover {
+    border-color: #00A859;
+    /* Anel de foco suave em volta */
+    box-shadow: 0 0 0 4px rgba(0, 168, 89, 0.1);
+}
+
+/* 5. Dark Mode */
+.dark input[type="checkbox"] {
+    background-color: #1F2937;
+    border-color: #374151;
+}

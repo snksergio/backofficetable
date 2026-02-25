@@ -1,0 +1,17 @@
+import { tv } from 'tailwind-variants';
+
+export const simplePopoverStyles = tv({
+    slots: {
+        container: 'relative inline-block',
+        popover: 'absolute z-50 mt-2 bg-white rounded-lg shadow-xl border border-gray-200 min-w-[200px] p-2 animate-in fade-in zoom-in-95 duration-100 origin-top-left',
+    },
+    variants: {
+        align: {
+            left: { popover: 'left-0' },
+            right: { popover: 'right-0' }
+        }
+    },
+    defaultVariants: {
+        align: 'left'
+    }
+});
