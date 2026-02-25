@@ -1,5 +1,4 @@
 import { tv } from 'tailwind-variants';
-import { DataGridTheme } from '../../DataGrid.theme';
 
 export const toolbarStyles = tv({
     slots: {

@@ -1,4 +1,3 @@
-import React from 'react';
 import type { ColumnTypeDefinition, FilterInputProps, FastFilterInputProps } from '../ColumnTypes.types';
 import { columnTypeStyles } from '../ColumnTypes.styles';
 

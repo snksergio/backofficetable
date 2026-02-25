@@ -1,4 +1,4 @@
-import type { SavedView, DataGridState } from '../DataGrid.types';
+import type { SavedView } from '../DataGrid.types';
 
 const STORAGE_KEY = 'datagrid_saved_views';
 const SIMULATED_LATENCY = 600;

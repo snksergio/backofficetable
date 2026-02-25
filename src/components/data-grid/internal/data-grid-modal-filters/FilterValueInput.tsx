@@ -1,4 +1,3 @@
-import React from 'react';
 import type { ColumnDef, FilterOperator } from '../../DataGrid.types';
 import { columnTypeRegistry } from '../../column-types/ColumnTypeRegistry';
 

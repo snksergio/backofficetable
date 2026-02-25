@@ -1,4 +1,4 @@
-import type { ReactNode, MouseEvent } from 'react';
+import type { MouseEvent } from 'react';
 
 export interface FastFilterChipProps {
     label: string;

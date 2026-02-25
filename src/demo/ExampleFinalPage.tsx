@@ -2,7 +2,7 @@ import React, { useMemo, useState } from 'react';
 import { DataGrid } from '../components/data-grid/DataGrid';
 import type { ColumnDef } from '../components/data-grid/DataGrid.types';
 import {
-    Shield, Moon, Plus,
+    Plus,
     MoreHorizontal, Pencil, Trash2, Calendar
 } from 'lucide-react';
 

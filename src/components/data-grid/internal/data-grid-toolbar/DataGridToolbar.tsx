@@ -1,5 +1,5 @@
 import React from 'react';
-import { Search, Filter, Columns, ChevronDown, Download, Rows } from 'lucide-react';
+import { Search, Filter, ChevronDown, Download } from 'lucide-react';
 import type { DataGridToolbarProps } from './DataGridToolbar.types';
 import type { DataGridDensity } from '../../DataGrid.types';
 
@@ -10,8 +10,6 @@ import { DataGridMoreOptions } from './DataGridMoreOptions';
 export const DataGridToolbar: React.FC<DataGridToolbarProps> = ({ config }) => {
 
     const {
-        title,
-        description,
         enableSearch = true,
         enableFilters = true,
         enableColumnConfig = true,

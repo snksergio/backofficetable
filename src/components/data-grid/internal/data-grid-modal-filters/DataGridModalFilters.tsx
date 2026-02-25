@@ -8,7 +8,7 @@ import { SavedViewsTab } from './SavedViewsTab';
 import { JsonViewTab } from './JsonViewTab';
 
 export const DataGridModalFilters = <T,>(props: DataGridModalFiltersProps<T>) => {
-    const { isOpen, onClose, columns, gridId } = props; // columns is technically unused by the tabs frame but might be needed later or passed down? actually FilterBuilderTab uses props which includes columns.
+    const { isOpen, onClose, gridId } = props; // columns is passed to FilterBuilderTab via props spread
     const styles = modalFiltersStyles();
     const [activeTab, setActiveTab] = useState<'builder' | 'saved' | 'json'>('builder');
 

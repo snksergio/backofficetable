@@ -4,7 +4,7 @@ import type { DataGridModalFiltersProps } from './DataGridModalFilters.types';
 import { modalFiltersStyles } from './DataGridModalFilters.styles';
 import { useDataGridModalFilters } from './useDataGridModalFilters';
 import { FilterValueInput } from './FilterValueInput';
-import { FILTER_OPERATORS, getOperatorsForColumn } from '../../DataGrid.constants';
+import { getOperatorsForColumn } from '../../DataGrid.constants';
 
 export const FilterBuilderTab = <T,>(props: DataGridModalFiltersProps<T>) => {
     const {

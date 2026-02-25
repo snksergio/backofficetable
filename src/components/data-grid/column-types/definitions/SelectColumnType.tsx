@@ -1,4 +1,3 @@
-import React from 'react';
 import type { ColumnTypeDefinition, FilterInputProps, FastFilterInputProps } from '../ColumnTypes.types';
 import { columnTypeStyles } from '../ColumnTypes.styles';
 
@@ -68,7 +67,6 @@ export const SelectColumnType: ColumnTypeDefinition = {
         );
     },
     renderFastFilterInput: (props: FastFilterInputProps) => {
-        const styles = columnTypeStyles();
         // Pass styles down or use hook inside renderer (Renderer is inside the module so hook call is safe if componentized)
         // Since SelectFastFilterRenderer is a component, we can call hook inside.
         return <SelectFastFilterRenderer {...props} />;
