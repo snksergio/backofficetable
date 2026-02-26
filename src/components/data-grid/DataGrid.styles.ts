@@ -48,7 +48,7 @@ export const dataGridStyles = tv({
         autoHeight: {
             true: {
                 wrapper: 'h-auto',
-                scrollContainer: 'overflow-visible',
+                scrollContainer: 'overflow-x-auto overflow-y-visible',
             },
             false: {}
         },

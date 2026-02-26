@@ -43,7 +43,7 @@ export const DataGridTheme = {
             primary: "flex items-center gap-2 px-4 py-2 bg-[#00A859] hover:bg-[#008F4C] text-white rounded-lg text-sm font-semibold transition-all shadow-sm ring-offset-2 focus:ring-2 focus:ring-[#00A859]",
         },
         chip: {
-            base: "group flex items-center h-[34px] border border-dashed border-[#D0D5DD] rounded-xl bg-white px-2 gap-2 hover:border-[#00A859]/40 transition-all cursor-pointer shadow-sm text-sm font-medium text-[#101828]",
+            base: "group flex items-center h-[34px] border border-dashed border-[#D0D5DD] dark:border-gray-700 rounded-xl bg-white dark:bg-gray-800 px-2 gap-2 hover:border-[#00A859]/40 transition-all cursor-pointer shadow-sm text-sm font-medium text-[#101828] dark:text-gray-200",
             active: "border-[#00A859] ring-2 ring-[#00A859]/10",
         }
     }

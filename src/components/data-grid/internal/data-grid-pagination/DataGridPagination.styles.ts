@@ -90,7 +90,7 @@ export const paginationStyles = tv({
             bg-white dark:bg-gray-800 
             text-sm font-bold text-[#344054] dark:text-gray-300 
             hover:bg-gray-50 dark:hover:bg-gray-700 
-            transition-all shadow-sm active:bg-gray-100
+            transition-all shadow-sm active:bg-gray-100 dark:active:bg-gray-700
         `,
         goToIcon: 'text-[#98A2B3] dark:text-gray-500'
     }

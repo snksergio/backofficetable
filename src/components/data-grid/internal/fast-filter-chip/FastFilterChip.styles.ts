@@ -14,7 +14,7 @@ export const fastFilterChipStyles = tv({
         icon: 'text-gray-400 font-bold',
         label: 'text-sm text-[#101828] dark:text-gray-200 font-medium whitespace-nowrap',
         value: 'font-normal truncate max-w-[150px]',
-        clearBtn: 'p-0.5 rounded-full hover:bg-black/10 text-gray-500 hover:text-gray-700 transition-colors',
+        clearBtn: 'p-0.5 rounded-full hover:bg-black/10 dark:hover:bg-white/10 text-gray-500 hover:text-gray-700 dark:hover:text-gray-400 transition-colors',
         separator: 'w-[1px] h-3.5 bg-[#EAECF0] dark:bg-gray-700 mx-1', // Vertical separator
         valueBadge: 'bg-[#F2F4F7] dark:bg-gray-700 text-[#344054] dark:text-gray-300 px-2 py-0.5 rounded-md text-[11px] font-bold whitespace-nowrap',
         valueWrapper: 'flex items-center gap-1.5',
@@ -26,7 +26,7 @@ export const fastFilterChipStyles = tv({
             true: {
                 // Active state is now subtle (same as default but with value content)
                 // We keep it dashed/gray unless open.
-                container: 'bg-white',
+                container: 'bg-white dark:bg-gray-800',
                 label: 'text-[#101828] dark:text-gray-200',
             },
             false: {
